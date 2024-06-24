@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/imagenes/gaming-32.ico" type="image/x-icon">
+
+    <!--- fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>AluraGeek</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <img src="/imagenes/Logo(1).png" class="img-nav" alt="alurageek">
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <section class="primera-seccion">
+
+            <p class="title">MIS PRODUCTOS:</p>
+
+            <div data-product class="products-container">
+
+                <!---    <div class="card">
+                  <div class="img-container">
+                        <img src="/imagenes/image 2.jpg" class="img-prod" alt="img-prod">
+                    </div>
+
+                    <div class="card-info">
+                        <p class="card-title">Game Boy Classic</p>
+                        <div class="card-end">
+                            <p class='card-precio'>$ 60,00</p>
+                            <button class="delete-button" data-id>
+                                <i class='bx bxs-trash bx-sm '></i>
+                            </button>
+
+                        </div> 
+                    </div> 
+
+                </div>-->
+
+                <!-- otras cards-->
+
+
+                <!-- otras cards-->
+            </div>
+
+
+        </section>
+
+        <section class="segunda-seccion">
+            <p>AGREGAR <br> PRODUCTO:</p>
+            <form class="form-container" data-form>
+
+                <input data-name placeholder="nombre..." type="text">
+                <input data-price placeholder="precio..." type="text">
+                <input data-image placeholder="imagen..." type="text">
+
+                <div class="button-container">
+
+                    <button type="submit" class="button-form" id="button-enviar">Enviar</button>
+                    <button type="reset" class="button-form" id="button-limpiar">Limpiar</button>
+
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer-container">
+
+        <div class="info-footer">
+
+            <img class="img-footer" src="/imagenes/Logo(1).png" alt="alurageek">
+            <p class="info-dev">DESARROLLADO POR VERÓNICA CORVALÁN</p>
+            <p class="alura-año">ALURA LATAM - 2024</p>
+        </div>
+
+
+    </footer>
+
+    <script src="./js/controllers/main.js" type="module"></script>
+
+</body>
+
+</html>

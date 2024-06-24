@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Batman",
+      "price": "35",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_640262-MCO47330060660_092021-O.webp",
+      "id": 3
+    },
+    {
+      "name": "Robin",
+      "price": "10",
+      "image": "https://m.media-amazon.com/images/I/61btnDznvWL._AC_SL1444_.jpg",
+      "id": 5
+    },
+    {
+      "name": "Capitán América",
+      "price": "46",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_807023-MLA48353854036_112021-O.webp",
+      "id": 7
+    }
+  ]
+}

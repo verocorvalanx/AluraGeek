@@ -1,0 +1,336 @@
+/*colores */
+:root {
+    --color-fondo: #FFFFFF;
+    --color-secundario: #5300C8;
+    --color-form: #03318C;
+
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: "Press Start 2P";
+    margin: 0;
+
+}
+
+
+
+/*Header*/
+header {
+    padding: 20px;
+    background-color: var(--color-secundario);
+    text-align: center;
+    border-bottom: #E5E5E5 solid 5px;
+
+}
+
+
+
+/*Main*/
+.main-container {
+    margin: 50px 20px;
+    padding: 60px 40px;
+    display: flex;
+    gap: 70px;
+    height: 100%;
+
+}
+
+/*Primera seccion */
+
+.primera-seccion {
+    padding: 40px;
+    width: 60%;
+
+
+}
+
+.primera-seccion .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 0;
+
+}
+
+.products-container {
+    overflow-y: auto;
+    height: 80%;
+    scrollbar-color: #D6D6D6;
+    scrollbar-width: thin;
+    box-shadow: -11px 10px 13px -3px #C9C5C5;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.card {
+    font-family: "IBM Plex Mono", monospace;
+    box-shadow: -11px 10px 13px -8px #838282;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    border: 3px solid black;
+    color: white;
+    padding: 8px;
+    width: 300px;
+    height: 400px;
+}
+
+.card:hover {
+    background-color: #9150ec;
+}
+
+.card-title {
+    font-size: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+}
+
+.img-prod {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 295px;
+    height: 280px;
+}
+
+
+
+.card-precio {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+.card-end {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.delete-button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+    color: black;
+
+}
+
+
+
+/*Segunda seccion*/
+
+.segunda-seccion {
+    padding: 40px;
+
+}
+
+.segunda-seccion p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.form-container input {
+    border-radius: 30px;
+    border: solid var(--color-form) 3px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    color: black;
+    padding: 15px 10px;
+}
+
+.form-container input::placeholder {
+    font-size: 16px;
+    color: var(--color-form);
+    opacity: 100%;
+    font-weight: 600;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 13px;
+}
+
+.button-form {
+    width: 188px;
+    height: 55px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    border: none;
+    font-size: 20px;
+}
+
+#button-enviar {
+    color: white;
+    background-color: var(--color-form);
+    border-radius: 15px;
+}
+
+#button-enviar:hover {
+    color: white;
+    background-color: black;
+    border: #000000 solid 3px;
+}
+
+#button-limpiar {
+    color: var(--color-form);
+    background-color: white;
+    border-radius: 15px;
+    border: solid var(--color-form) 3px;
+}
+
+#button-limpiar:hover {
+    color: white;
+    background-color: black;
+    border: #000000 solid 3px;
+}
+
+/*Footer*/
+
+
+.footer-container {
+    display: flex;
+    padding: 64px;
+    background-color: var(--color-secundario);
+    margin: 0;
+    box-shadow: #a9a4a4 0px -5px 3px 0px;
+    justify-content: center;
+
+}
+
+.info-footer {
+    font-size: 16px;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+
+}
+
+.alura-año {
+    font-weight: 200;
+}
+
+
+
+/*--------------RESPONSIVE---------------*/
+
+/*Mobile*/
+
+@media (max-width: 425px) {
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px 10px;
+        padding: 30px 20px;
+        gap: 30px;
+
+    }
+
+    .primera-seccion {
+        padding: 20px;
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+
+    }
+
+    .tittle {
+        text-align: center;
+    }
+
+    .products-container {
+        overflow-x: auto;
+        scrollbar-color: #D6D6D6;
+        scrollbar-width: thin;
+        box-shadow: -11px 10px 13px -3px #C9C5C5;
+        padding: 0 20px 20px 10px;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: nowrap;
+
+
+    }
+
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .img-prod {
+        width: 250px;
+        height: 300px;
+    }
+
+    .segunda-seccion {
+        padding: 20px;
+
+    }
+
+}
+
+
+/*Tablet*/
+
+@media (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px 10px;
+        padding: 30px 20px;
+        gap: 30px;
+
+    }
+
+    .tittle {
+        text-align: center;
+    }
+
+    .primera-seccion {
+        padding: 20px;
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+
+    }
+
+    .products-container {
+        overflow-x: auto;
+        scrollbar-color: #D6D6D6;
+        scrollbar-width: thin;
+        box-shadow: -11px 10px 13px -3px #C9C5C5;
+        padding: 0 20px 20px 10px;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
+    .card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .img-prod {
+        width: 250px;
+        height: 300px;
+    }
+}
