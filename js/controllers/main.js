@@ -30,17 +30,38 @@ function createCard(name, price, image, id) {
 
     //elimino mi card
 
-const botonDelete = card.querySelector("[data-id]");
+    const botonDelete = card.querySelector("[data-id]");
 
     botonDelete.addEventListener("click", async (e) => {
         e.preventDefault();
-    
-        await servicesProducts.deleteProducts(id);
-        card.remove()
-        console.log("se borró");
+
+        //creo alerta de guardar cambios o no
+
+        await Swal.fire({
+            title: "¿Quieres eliminar el producto?",
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: "Sí",
+            cancelButtonText: "Cancelar",
+            denyButtonText: `No`
+        }).then((result) => {
+
+            if (result.isConfirmed) {
+                Swal.fire("¡Se eliminó correctamente!", "", "success");
+                servicesProducts.deleteProducts(id);
+                card.remove();
+                console.log("se borró");
+            } else if (result.isDenied) {
+                Swal.fire("No se guardaron los cambios", "", "info");
+            }
+        });
+
+
+
+
     });
 
-    
+
 
     productContainer.appendChild(card);
     return card;
@@ -84,10 +105,11 @@ form.addEventListener("submit", (e) => {
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
 
+
+
 });
 
 
-//agregar escuchador a boton delete
 
 
 

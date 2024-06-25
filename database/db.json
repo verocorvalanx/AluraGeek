@@ -17,6 +17,30 @@
       "price": "46",
       "image": "https://http2.mlstatic.com/D_NQ_NP_807023-MLA48353854036_112021-O.webp",
       "id": 7
+    },
+    {
+      "name": "Iron Man",
+      "price": "26",
+      "image": "https://m.media-amazon.com/images/I/61eGRhr4c5L._AC_SL1064_.jpg",
+      "id": 7
+    },
+    {
+      "name": "Joker",
+      "price": "24",
+      "image": "https://m.media-amazon.com/images/I/511hkikDb3L.jpg",
+      "id": 7
+    },
+    {
+      "name": "Spiderman",
+      "price": "39",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_672412-MLA74325444461_012024-O.webp",
+      "id": 7
+    },
+    {
+      "name": "Harley Quinn",
+      "price": "55",
+      "image": "https://ss423.liverpool.com.mx/xl/1098200700.jpg",
+      "id": 7
     }
   ]
 }
